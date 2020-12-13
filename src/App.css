@@ -46,13 +46,14 @@ ul li:hover:before {
   letter-spacing: 0px;
 }
 
-ul li a {
+ul li h1 {
   position: relative;
   display: inline-block;
   padding: 6px 15px;
   text-decoration: none;
   background: #118ab2;
   color: #fff;
+  font-size: 1.5em;
   text-transform: uppercase;
   letter-spacing: 2px;
   overflow: hidden;
@@ -60,18 +61,37 @@ ul li a {
   z-index: 1;
 }
 
-ul:hover li a {
+ul:hover li h1 {
   opacity: 0;
 }
 
-ul li a:hover {
+ul li h1:hover {
   transform: scale(1.4);
   z-index: 1000;
-  background: #06d6a0;
   opacity: 1;
 }
 
-ul li a:before {
+#who:hover {
+  background: #06d6a0;
+}
+
+#skills:hover {
+  background: #fdc90d;
+}
+
+#projects:hover {
+  background: #ee4266;
+}
+
+#brain:hover {
+  background: #118ab2;
+}
+
+#resume:hover {
+  background: #72195a;
+}
+
+ul li h1:before {
   content: "";
   position: absolute;
   top: 0;
@@ -88,7 +108,7 @@ ul li a:before {
   transition: 0s;
 }
 
-ul li a:hover:before {
+ul li h1:hover:before {
   left: calc(100% + 100px);
   transition: 0.5s;
   transition-delay: 0.2s;
@@ -123,7 +143,15 @@ ul li a:hover:before {
   }
 }
 
-@keyframes fadein {
+.fade-in {
+  animation: fadeIn ease 3s;
+  -webkit-animation: fadeIn ease 3s;
+  -moz-animation: fadeIn ease 3s;
+  -o-animation: fadeIn ease 3s;
+  -ms-animation: fadeIn ease 3s;
+}
+
+@keyframes fadeIn {
   from {
     opacity: 0;
   }
@@ -132,7 +160,7 @@ ul li a:hover:before {
   }
 }
 
-@keyframes fadeout {
+@keyframes fadeOut {
   from {
     opacity: 1;
   }

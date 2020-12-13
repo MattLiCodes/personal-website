@@ -1,9 +1,15 @@
 import "./App.css";
+import "./Skills.css";
+import { Link } from "react-router-dom";
 
 function Skills() {
   return (
     <div>
-      <h1>Skills</h1>
+      <Link to={"/"}>
+        <h1 id="title-skills" class="fade-in">
+          Skills & Interests
+        </h1>
+      </Link>
     </div>
   );
 }

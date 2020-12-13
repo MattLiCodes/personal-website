@@ -19,25 +19,25 @@ function Nav() {
       </svg> */}
 
       <div id="content">
-        <ul>
+        <ul class="fade-in">
           <Link to="/who">
             <li data-text="Who's Matt?">
-              <a href="#">Who's Matt?</a>
+              <h1 id="who">Who's Matt?</h1>
             </li>
           </Link>
           <Link to="/skills">
             <li data-text="Skills & Interests">
-              <a href="#">Skills & Interests</a>
+              <h1 id="skills">Skills & Interests</h1>
             </li>
           </Link>
           <Link to="/projects">
             <li data-text="Selected Projects">
-              <a href="#">Selected Projects</a>
+              <h1 id="projects">Selected Projects</h1>
             </li>
           </Link>
           <Link to="/brain">
             <li data-text="Brain">
-              <a href="#">Brain</a>
+              <h1 id="brain">Brain</h1>
             </li>
           </Link>
           <li data-text="Resume">
@@ -45,7 +45,7 @@ function Nav() {
               href="https://drive.google.com/file/d/1n2-eTOhZwc93DfUL3Zf9g7d6o-Qm7KYS/view?usp=sharing"
               target="_blank"
             >
-              Resume
+              <h1 id="resume">Resume</h1>
             </a>
           </li>
         </ul>

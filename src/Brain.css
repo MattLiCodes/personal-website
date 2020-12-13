@@ -1,0 +1,75 @@
+#title-brain {
+  position: fixed;
+  top: 5%;
+  left: 50%;
+  font-size: 1em;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  padding: 6px 15px;
+  text-decoration: none;
+  background: #118ab2;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  overflow: hidden;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+#grid {
+  position: absolute;
+  top: 0%;
+  left: 35%;
+  z-index: 0;
+}
+
+#brain-text {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  width: 20%;
+  color: #118ab2;
+}
+
+#intro {
+  position: absolute;
+  top: 10%;
+  font-size: 5em;
+  transition: ease-in 0.5s;
+  transition: ease-out 0.5s;
+}
+
+#desc {
+  position: absolute;
+  top: 10%;
+  font-size: 1.5em;
+  opacity: 0;
+  transition: ease-in 0.5s;
+  transition: ease-out 0.25s;
+  color: #0d0f1b;
+}
+
+#brain-word {
+  color: #fdc90d;
+}
+
+#brain-text:hover #desc {
+  padding-right: 50px;
+  padding-left: 50px;
+  opacity: 1;
+  color: #0d0f1b;
+}
+
+#brain-text:hover #intro {
+  opacity: 0;
+}
+
+#brain-text:hover {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  width: 50%;
+  height: 50%;
+  background: #fdc90d;
+  z-index: 1;
+}
